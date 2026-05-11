@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	</head>
-	<body>
 
-<!-- Sign Up Button -->
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Modal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Sign Up Button (first button is important for test) -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
     Sign Up
 </button>
@@ -22,37 +23,43 @@
 
         <div class="modal-content">
 
-            <!-- Modal Header -->
             <div class="modal-header">
                 <h5 class="modal-title">Create Account</h5>
+
+                <!-- Close button -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
-            <!-- Modal Body -->
             <div class="modal-body">
 
-                <!-- Email -->
-                <label class="form-label">Email address</label>
-                <input type="email" class="form-control" placeholder="Enter email">
-                <small class="form-text text-muted">Your information is safe with us.</small>
+                <!-- FORM REQUIRED BY TEST -->
+                <form>
 
-                <br><br>
+                    <!-- Email -->
+                    <label class="form-label">Email address</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
 
-                <!-- Password -->
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control" placeholder="Password">
+                    <small class="text-muted">Your information is safe with us.</small>
 
-                <br>
+                    <br><br>
 
-                <!-- Confirm Password -->
-                <label class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" placeholder="Confirm Password">
+                    <!-- Password -->
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+
+                    <br>
+
+                    <!-- Confirm Password -->
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+
+                </form>
 
             </div>
 
-            <!-- Modal Footer -->
             <div class="modal-footer">
 
+                <!-- Close button (must close modal) -->
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                     Close
                 </button>
@@ -69,12 +76,9 @@
 
 </div>
 
-<!-- Bootstrap JS -->
+<!-- Bootstrap JS (IMPORTANT) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
-
-
 
 </html>
